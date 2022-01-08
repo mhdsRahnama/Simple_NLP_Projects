@@ -8,7 +8,7 @@ import networkx as nx
 
 file=open("sample3")
 text=" ".join(file.readlines())
-# print(text)
+print("Text:\n",text)
 normalizer=hazm.Normalizer()
 norm=normalizer.normalize(text)
 sentences=hazm.sent_tokenize(norm)
@@ -33,7 +33,7 @@ for sent in sentences:
 
     Vectors.append(vec)
 
-print(len(Vectors),len(sentences))
+# print(len(Vectors),len(sentences))
 # print(Vectors[1])
 
 dist_out =np.array(cosine_similarity(Vectors,dense_output=False))
@@ -63,14 +63,15 @@ dist_out =np.array(cosine_similarity(Vectors,dense_output=False))
 
 top_n=5
 sentence_similarity_graph = nx.from_numpy_array(dist_out)
-print(sentence_similarity_graph)
+# print(sentence_similarity_graph)
+
 ############# Draw the similarity graph ##########
 # nx.draw(sentence_similarity_graph, with_labels=True, font_weight='bold')
 # plt.show()
 #############################
 
 scores = nx.pagerank(sentence_similarity_graph)
-print(scores)
+# print(scores)
 # Step 4 - Sort the rank and pick top sentences
 ranked_sentence = sorted(((scores[i], s) for i, s in enumerate(sentences)), reverse=True)
 print("Indexes of top ranked_sentence order are ", ranked_sentence)
