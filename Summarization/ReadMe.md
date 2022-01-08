@@ -25,3 +25,5 @@ https://medium.com/data-science-in-your-pocket/text-summarization-using-textrank
 
 ## نحوه اجرای پروژه
 کافی است فایل Extractive.py با یکی از سه فایل sample اجرا شود. برای نمونه، متن سه خبر از خبرگزاری‌ها انتخاب شده است.
+لیست ایست واژه‌های فارسی :
+https://github.com/kharazi/persian-stopwords
