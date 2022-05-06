@@ -7,5 +7,3 @@ There are three sample files that contain news from Iranian news agencies. You c
 
 Stopwords lists are downloaded from the following repository:
 https://github.com/kharazi/persian-stopwords
-## 
-This guidance is currently being updated.
