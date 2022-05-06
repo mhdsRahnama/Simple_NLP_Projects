@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt
 import networkx as nx
 
-file=open("sample3")
+file=open("sample1.txt")
 text=" ".join(file.readlines())
 print("Text:\n",text)
 normalizer=hazm.Normalizer()
@@ -20,7 +20,7 @@ for sent in sentences:
 all_words=list(set(all_words))
 # print(all_words)
 
-with open('stopwords') as f:
+with open('stopwords.txt') as f:
     sw = [re.sub(r"[\u200c-\u200f]", "", (normalizer.normalize(line)).rstrip().replace(" ", "")) for line in f]
 
 # print(all_words)
