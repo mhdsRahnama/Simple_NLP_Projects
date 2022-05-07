@@ -6,4 +6,5 @@ It is worth mentioning that text summarization is an unsupervised problem. There
 There are three sample files that contain news from Iranian news agencies. You can run Extractive.py with one of these samples. The file "stopwords" must be been in the current directory.
 
 Stopwords lists are downloaded from the following repository:
+
 https://github.com/kharazi/persian-stopwords
