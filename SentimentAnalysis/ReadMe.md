@@ -1,6 +1,6 @@
 # Sentiment analysis
 
-Source of taaghche dataset:
+The dataset can be downloaded from the following link:
 https://www.kaggle.com/datasets/saeedtqp/taaghche
 
 
