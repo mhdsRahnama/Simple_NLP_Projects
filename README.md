@@ -1,2 +1,2 @@
-# nlp-simple-projects
+# simple-nlp-projects
 Build your first Persian NLP project :)
